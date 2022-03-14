@@ -8,7 +8,7 @@ import { Card } from 'src/Modal/Card';
 })
 export class CardApiServiceService extends DataService<Card> {
   constructor(httpClient: HttpClient) {
-    super("http://localhost:5000/api/SortedCard", httpClient);
+    super("https://cardgame001api.azurewebsites.net/api/SortedCard", httpClient);
   }
 
   getAllSortedCards(param: string) {
